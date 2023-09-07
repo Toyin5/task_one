@@ -31,8 +31,8 @@ app.get("/api?", (req, res) => {
     track,
     current_day: days[date.getDay()],
     utc_time: date,
-    github_file_url: "",
-    github_repo_url: "",
+    github_file_url: "https://github.com/Toyin5/task_one/blob/main/index.js",
+    github_repo_url: "https://github.com/Toyin5/task_one",
   });
 });
 
