@@ -30,7 +30,7 @@ app.get("/api?", (req, res) => {
     slack_name,
     track,
     current_day: days[date.getDay()],
-    utc_time: date.toISOString(),
+    utc_time: date.toISOString().split(".")[0]+"Z",
     github_file_url: "https://github.com/Toyin5/task_one/blob/main/index.js",
     github_repo_url: "https://github.com/Toyin5/task_one",
   });
